@@ -1,41 +1,29 @@
-unfolding_app_template and UC San Diego/Coursera MOOC starter code
-==================================================================
+# Earthquake Map
 
-This is a skeleton to use Unfolding in Eclipse as well as some starter
-code for the Object Oriented Programming in Java course offered by 
-UC San Diego through Coursera.
+This project is a learning exercise developed as part of the UC San Diego/Coursera MOOC on Object Oriented Programming in Java. The project uses the Unfolding Maps library to visualize earthquake data on a map.
 
-A very basic Unfolding demo you'll find in the source folder in the default package. 
-For more examples visit http://unfoldingmaps.org, or download the template with
-examples.
+## Project Structure
 
-The module folders contain the starter code for the programming assignments
-associated with the MOOC.
+- `src/`: Contains the source code for the project.
+  - `EarthquakeMarker.java`: Handles the representation of earthquake markers on the map.
+  - `LandQuakeMarker.java`: Extends `EarthquakeMarker` to represent earthquakes that occur on land.
+  - `OceanQuakeMarker.java`: Extends `EarthquakeMarker` to represent earthquakes that occur in the ocean.
+  - `EarthquakeCityMap.java`: The main class that sets up the map and integrates all components.
+  - `CityMarker.java`: Represents cities on the map.
+  - `CountryMarker.java`: Represents countries on the map.
+  - `Marker.java`: A base class for all markers on the map.
+  - `CommonMarker.java`: An abstract class that extends `Marker` and is extended by `CityMarker`, `CountryMarker`, and `EarthquakeMarker`.
 
-Get excited and make things!
+## Features
 
+- Visualizes earthquake data on an interactive map.
+- Custom markers to represent different magnitudes of earthquakes.
+- Ability to compare earthquake magnitudes.
+- Differentiates between land and ocean earthquakes.
+- Displays cities and countries on the map.
 
-INSTALLATION
+## Installation
 
-Import this folder in Eclipse ('File' -> 'Import' -> 'Existing Projects into
-Workspace', Select this folder, 'Finish')
-
-
-MANUAL INSTALLATION
-
-If the import does not work follow the steps below.
-
-- Create new Java project
-- Copy+Paste all files into project
-- Add all lib/*.jars to build path
-- Set native library location for jogl.jar. Choose appropriate folder for your OS.
-- Add data/ as src
-
-
-TROUBLE SHOOTING
-
-Switch Java Compiler to 1.6 if you get VM problems. (Processing should work with Java 1.6, and 1.7)
-
-
-
-
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/MohamdOmar/Earthquake_Map.git
