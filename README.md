@@ -27,4 +27,3 @@ This project is a learning exercise developed as part of the UC San Diego/Course
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/MohamdOmar/Earthquake_Map.git
-
